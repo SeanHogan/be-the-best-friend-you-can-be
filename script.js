@@ -27,13 +27,13 @@ function happyFn(happy) {
         return;
     }
     happy[0].click();
-    location.reload(true);
     happy[0].style.color='#FF0000';
     var countSpan = document.querySelector('#happy span');
     countSpan.innerHTML = parseInt(countSpan.innerHTML) + 1;
     
     // Wait for each Like to be processed before trying the next.
     // Facebook enforces this requirement.
+    return;
     window.setTimeout(function() {
         happyFn(happy.splice(1));
     }, 800);
@@ -43,5 +43,7 @@ function haltFn() {
     halt = true;
     return false; // prevent default event
 }
-
-happyFn(happy);
+for (var j = 1; j < 3; j++) {
+    happyFn(happy);
+    location.reload(true);
+}
