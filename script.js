@@ -22,7 +22,7 @@ happyDiv.innerHTML = '<div id=\'happy\' style=\'background-color:#ddd;font-size:
 document.getElementsByTagName('body')[0].appendChild(happyDiv);
 
 function happyFn(happy) {
-    if (halt || !happy || !happy.length) {
+    if (1 || halt || !happy || !happy.length) {
         document.getElementById('happyStatus').innerHTML = 'Done!';
         return;
     }
@@ -33,7 +33,6 @@ function happyFn(happy) {
     
     // Wait for each Like to be processed before trying the next.
     // Facebook enforces this requirement.
-    return;
     window.setTimeout(function() {
         happyFn(happy.splice(1));
     }, 800);
