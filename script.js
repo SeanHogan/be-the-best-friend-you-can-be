@@ -27,6 +27,7 @@ function happyFn(happy) {
         return;
     }
     happy[0].click();
+    location.reload(true);
     happy[0].style.color='#FF0000';
     var countSpan = document.querySelector('#happy span');
     countSpan.innerHTML = parseInt(countSpan.innerHTML) + 1;
