@@ -1,6 +1,6 @@
 "Be the best friend you can be!"
 
-### Read the [original blog post](http://www.feross.org/like-everything-on-facebook/).
+### Read the [original blog post] from the creator of the original: (http://www.feross.org/like-everything-on-facebook/).
 
 This is a fork from the above - hopefully, it will have modifications to:
 
